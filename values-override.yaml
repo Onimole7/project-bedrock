@@ -1,0 +1,51 @@
+cart:
+  fullnameOverride: carts
+  serviceAccount:
+    create: false
+    name: carts
+  app:
+    persistence:
+      provider: dynamodb
+      dynamodb:
+        tableName: bedrock-carts
+        createTable: false
+  dynamodb:
+    create: false
+
+catalog:
+  fullnameOverride: catalog
+  app:
+    persistence:
+      provider: mysql
+      database: catalog
+      secret:
+        username: admin
+
+orders:
+  fullnameOverride: orders
+  app:
+    persistence:
+      provider: postgres
+      database: orders
+      secret:
+        username: dbadmin
+    messaging:
+      provider: rabbitmq
+  rabbitmq:
+    create: true
+
+checkout:
+  fullnameOverride: checkout
+  retail:
+    checkout:
+      endpoints:
+        orders: http://orders:80
+
+ui:
+  fullnameOverride: ui
+  app:
+    endpoints:
+      catalog: http://catalog:80
+      carts: http://carts:80
+      checkout: http://checkout:80
+      orders: http://orders:80

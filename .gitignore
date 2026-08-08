@@ -1,0 +1,21 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+*.tfvars
+
+# Secrets / keys
+*.pem
+*.key
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Downloaded tool binaries (not part of the deliverable)
+eksctl.zip
+helm-*.zip
+get_helm.sh
+windows-amd64/
+test.jpg
