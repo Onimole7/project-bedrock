@@ -268,3 +268,4 @@ resource "aws_s3_bucket_notification" "assets" {
 
   depends_on = [aws_lambda_permission.s3_invoke]
 }
+# CI/CD pipeline test
