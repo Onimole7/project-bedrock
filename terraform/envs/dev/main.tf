@@ -196,7 +196,7 @@ resource "aws_secretsmanager_secret_version" "postgres" {
 }
 
 resource "aws_s3_bucket" "assets" {
-  bucket = "bedrock-assets-alt-soe-tin-025-0082"
+  bucket = "bedrock-assets-alt-soe-tin-025-0082-v2"
   tags   = { Project = "tinyuka-2025-capstone" }
 }
 
@@ -288,3 +288,4 @@ output "vpc_id" {
 output "assets_bucket_name" {
   value = aws_s3_bucket.assets.bucket
 }
+# retest
