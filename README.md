@@ -82,8 +82,8 @@ cd terraform/envs/dev
 terraform destroy
 
 # Manual cleanup
-aws s3 rm s3://bedrock-assets-alt-soe-tin-025-0082 --recursive
-aws s3api delete-bucket --bucket bedrock-assets-alt-soe-tin-025-0082
+aws s3 rm s3://bedrock-assets-alt-soe-tin-025-0082-v2 --recursive
+aws s3api delete-bucket --bucket bedrock-assets-alt-soe-tin-025-0082-v2
 aws s3 rm s3://bedrock-tfstate-alt-soe-tin-025-0082 --recursive
 aws s3api delete-bucket --bucket bedrock-tfstate-alt-soe-tin-025-0082
 aws logs delete-log-group --log-group-name /aws/eks/project-bedrock-cluster/cluster
