@@ -21,7 +21,7 @@ jobs:
 
       - uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::046538030941:role/github-oidc-bedrock
+          role-to-assume: arn:aws:iam::521294962825:role/github-oidc-bedrock
           aws-region: us-east-1
 
       - uses: hashicorp/setup-terraform@v3
@@ -56,7 +56,7 @@ jobs:
 
       - uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::046538030941:role/github-oidc-bedrock
+          role-to-assume: arn:aws:iam::521294962825:role/github-oidc-bedrock
           aws-region: us-east-1
 
       - uses: hashicorp/setup-terraform@v3

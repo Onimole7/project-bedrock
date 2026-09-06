@@ -2,12 +2,12 @@
   "assets_bucket_name": {
     "sensitive": false,
     "type": "string",
-    "value": "bedrock-assets-alt-soe-tin-025-0082"
+    "value": "bedrock-assets-alt-soe-tin-025-0082-v2"
   },
   "cluster_endpoint": {
     "sensitive": false,
     "type": "string",
-    "value": "https://DEC50F1DA021159C9615443576215403.gr7.us-east-1.eks.amazonaws.com"
+    "value": "https://0FEAA5166BCF07559DF22A50D41B961A.gr7.us-east-1.eks.amazonaws.com"
   },
   "cluster_name": {
     "sensitive": false,
@@ -22,6 +22,6 @@
   "vpc_id": {
     "sensitive": false,
     "type": "string",
-    "value": "vpc-0f4afd99268887cba"
+    "value": "vpc-09d1cba847fbc77cf"
   }
 }
